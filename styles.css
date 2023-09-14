@@ -1,20 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-image: url(/Images/road.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 
-@font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: Raleway;
-    color: #777;
-}
-
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 7px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 html, body {
     margin: 0;
     padding: 0;
@@ -74,6 +127,9 @@ html, body {
 
 .content-section {
     margin: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 7px;
+    background-color: #d5d2d2;
 }
 
 .container {
@@ -98,7 +154,7 @@ html, body {
 }
 
 .main-footer {
-    background-color: #56CCF2;
+    background-color: #000203;
     color: white;
     padding: .25em 0;
 }
@@ -132,7 +188,7 @@ html, body {
 .btn-header {
     margin: .5em 15% 2em 15%;
     color: white;
-    border: 2px solid #2D9CDB;
+    border: 2px solid #000000;
     background-color: rgba(255, 255, 255, .1);
     border-radius: 0;
     font-size: 1.5em;
@@ -148,7 +204,7 @@ html, body {
 .btn-play {
     display: block;
     margin: 0 auto;
-    color: #2D9CDB;
+    color: #505253;
     font-size: 4em;
     border-radius: 50%;
     width: 100px;
@@ -159,14 +215,14 @@ html, body {
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: #000000;
     border: none;
     border-radius: .3em;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #727272;
 }
 
 .tour-row {
@@ -204,6 +260,9 @@ html, body {
 
 .shop-item {
     margin: 30px;
+    border-radius: 7px ;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    background-color: #eeeeee;
 }
 
 .shop-item-title {
@@ -212,12 +271,12 @@ html, body {
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: #333;
+    color: #000000;
     margin-bottom: 15px;
 }
 
 .shop-item-image {
-    height: 250px;
+    height: 210px;
 }
 
 .shop-item-details {
@@ -240,7 +299,7 @@ html, body {
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
-    color: #333;
+    color: #000000;
 }
 
 .cart-column {
@@ -263,7 +322,7 @@ html, body {
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: #000000;
 }
 
 .cart-quantity {
@@ -271,7 +330,7 @@ html, body {
 }
 
 .cart-item-title {
-    color: #333;
+    color: #000000;
     margin-left: .5em;
     font-size: 1.2em;
 }
@@ -299,7 +358,7 @@ html, body {
     width: 50px;
     border-radius: 5px;
     border: 1px solid #56CCF2;
-    background-color: #eee;
+    background-color: #eeeeee;
     color: #333;
     padding: 0;
     text-align: center;
@@ -329,7 +388,7 @@ html, body {
 }
 
 .cart-total-price {
-    color: #333;
+    color: #000000;
     font-size: 1.1em;
 }
 

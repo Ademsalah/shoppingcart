@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Generics | Store</title>
+        <title>The Garage</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" />
         <script src="/store.js" async></script>
     </head>
     <body>
-        <header class="main-header">
-            <nav class="main-nav nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
-            </nav>
-            <h1 class="band-name band-name-large">The Generics</h1>
+        <header>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Categorie 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div> 
+              </div>
         </header>
-        <section class="container content-section">
-            <h2 class="section-header">MUSIC</h2>
+        <section class="container ">
+            <h2 class="section-header">cars</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    <span class="shop-item-title">Album 1</span>
-                    <img class="shop-item-image" src="Images/Album 1.png">
+                    <span class="shop-item-title">mercedes</span>
+                    <img class="shop-item-image" src="/Images/mercedes-classe-g-.jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$12.99</span>
+                        <span class="shop-item-price">$122,000.00</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Album 2</span>
-                    <img class="shop-item-image" src="Images/Album 2.png">
+                    <span class="shop-item-title">audi</span>
+                    <img class="shop-item-image" src="Images/audi.jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$14.99</span>
+                        <span class="shop-item-price">$80,000.00</span>
                         <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Album 3</span>
-                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <span class="shop-item-title">ferrari</span>
+                    <img class="shop-item-image" src="Images/Ferrari-03.webp">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$9.99</span>
+                        <span class="shop-item-price">$200,000.00</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Album 4</span>
-                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <span class="shop-item-title">bmw</span>
+                    <img class="shop-item-image" src="Images/bmw.jpg">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
+                        <span class="shop-item-price">$90,000.00</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container content-section">
+        <section class="container ">
             <h2 class="section-header">MERCH</h2>
             <div class="shop-items">
                 <div class="shop-item">
-                    <span class="shop-item-title">T-Shirt</span>
-                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <span class="shop-item-title">porshe</span>
+                    <img class="shop-item-image" src="Images/porsche-911.webp">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$19.99</span>
+                        <span class="shop-item-price">$150,000.00</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
                 <div class="shop-item">
-                    <span class="shop-item-title">Coffee Cup</span>
-                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <span class="shop-item-title">supra</span>
+                    <img class="shop-item-image" src="Images/toyota-supra.webp">
                     <div class="shop-item-details">
-                        <span class="shop-item-price">$6.99</span>
+                        <span class="shop-item-price">$140,000.00</span>
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
@@ -85,10 +91,10 @@
             <div class="cart-items">
                 <div class="cart-row">
                     <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="Images/Shirt.png" width="100" height="100">
-                        <span class="cart-item-title">T-Shirt</span>
+                        <img class="cart-item-image" src="Images/porsche-911.webp" width="100" height="100">
+                        <span class="cart-item-title">porshe</span>
                     </div>
-                    <span class="cart-price cart-column">$19.99</span>
+                    <span class="cart-price cart-column">$150,000.00</span>
                     <div class="cart-quantity cart-column">
                         <input class="cart-quantity-input" type="number" value="1">
                         <button class="btn btn-danger" type="button">REMOVE</button>
@@ -96,10 +102,10 @@
                 </div>
                 <div class="cart-row">
                     <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="Images/Album 3.png" width="100" height="100">
-                        <span class="cart-item-title">Album 3</span>
+                        <img class="cart-item-image" src="Images/Ferrari-03.webp" width="90" height="70">
+                        <span class="cart-item-title">ferrari</span>
                     </div>
-                    <span class="cart-price cart-column">$9.99</span>
+                    <span class="cart-price cart-column">$200,000.00</span>
                     <div class="cart-quantity cart-column">
                         <input class="cart-quantity-input" type="number" value="2">
                         <button class="btn btn-danger" type="button">REMOVE</button>
@@ -108,13 +114,13 @@
             </div>
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">$39.97</span>
+                <span class="cart-total-price">$550000.00</span>
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">
-                <h3 class="band-name">The Generics</h3>
+                <h3 class="car-name">GET YOUR CAR</h3>
                 <ul class="nav footer-nav">
                     <li>
                         <a href="https://www.youtube.com" target="_blank">
